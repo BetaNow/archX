@@ -12,6 +12,8 @@
     <router-link to="/forum">Forum</router-link>
     |
     <router-link to="/articles">Articles</router-link>
+    |
+    <router-link to="/write-up">Write-Up</router-link>
   </nav>
 
   <router-view/>

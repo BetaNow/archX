@@ -4,13 +4,15 @@ import News from '../views/News.vue';
 import OpenSource from '../views/OpenSource.vue';
 import Forum from '../views/Forum.vue';
 import Articles from '../views/Articles.vue';
+import WriteUp from '../views/WriteUp.vue';
 
 const routes = [
-    { path: '/', name: 'Home', component: Home, meta: { title: 'Home' } },
-    { path: '/news', name: 'News', component: News, meta: { title: 'News' } },
-    { path: '/open-source', name: 'Open source', component: OpenSource, meta: { title: 'Open source' } },
-    { path: '/forum', name: 'Forum', component: Forum, meta: { title: 'Forum' } },
-    { path: '/articles', name: 'Articles', component: Articles, meta: { title: 'Articles' } },
+    { path: '/', name: 'Home', component: Home },
+    { path: '/news', name: 'News', component: News },
+    { path: '/open-source', name: 'Open source', component: OpenSource },
+    { path: '/forum', name: 'Forum', component: Forum },
+    { path: '/articles', name: 'Articles', component: Articles },
+    { path: '/write-up', name: 'Write-up', component: WriteUp },
 ];
 
 const router = createRouter({
@@ -20,7 +22,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     const defaultTitle = 'archX';
-    document.title = `${defaultTitle} | ${to.meta.title}`;
+    document.title = `${defaultTitle} | ${to.name}`;
     next();
 });
 
