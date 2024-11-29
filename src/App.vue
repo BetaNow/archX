@@ -6,6 +6,8 @@
     <router-link to="/">Accueil</router-link>
     |
     <router-link to="/news">News</router-link>
+    |
+    <router-link to="/open-source">Open source</router-link>
   </nav>
 
   <router-view/>

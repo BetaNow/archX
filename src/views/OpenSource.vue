@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <h1>ArchX - Cryptography and computing</h1>
+  <div class="open-source">
+    <h1>Open source project</h1>
   </div>
 </template>
 
