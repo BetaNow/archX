@@ -5,6 +5,7 @@ import OpenSource from '../views/OpenSource.vue';
 import Forum from '../views/Forum.vue';
 import Articles from '../views/Articles.vue';
 import WriteUp from '../views/WriteUp.vue';
+import Ressources from '../views/Ressources.vue';
 
 const routes = [
     { path: '/', name: 'Home', component: Home },
@@ -13,6 +14,7 @@ const routes = [
     { path: '/forum', name: 'Forum', component: Forum },
     { path: '/articles', name: 'Articles', component: Articles },
     { path: '/write-up', name: 'Write-up', component: WriteUp },
+    { path: '/ressources', name: 'Ressources', component: Ressources },
 ];
 
 const router = createRouter({

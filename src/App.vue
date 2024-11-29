@@ -14,6 +14,8 @@
     <router-link to="/articles">Articles</router-link>
     |
     <router-link to="/write-up">Write-Up</router-link>
+    |
+    <router-link to="/ressources">Ressources</router-link>
   </nav>
 
   <router-view/>
