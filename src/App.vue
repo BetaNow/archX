@@ -10,6 +10,8 @@
     <router-link to="/open-source">Open source</router-link>
     |
     <router-link to="/forum">Forum</router-link>
+    |
+    <router-link to="/articles">Articles</router-link>
   </nav>
 
   <router-view/>
