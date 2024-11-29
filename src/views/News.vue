@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>À propos</h1>
+  <div class="news">
+    <h1>News</h1>
   </div>
 </template>
 

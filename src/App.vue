@@ -5,7 +5,7 @@
     </svg>
     <router-link to="/">Accueil</router-link>
     |
-    <router-link to="/about">À propos</router-link>
+    <router-link to="/news">News</router-link>
   </nav>
 
   <router-view/>
