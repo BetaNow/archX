@@ -1,30 +1,29 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <nav>
+    <svg width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 375">
+      <path fill="#005cf5" d="M500,250v125h-125v-125h.43v-.43c0-69.04-55.96-125-125-125s-125,55.96-125,125v.43h124.57v125h-125v-125H0C0,111.93,111.93,0,250,0s250,111.93,250,250Z"/>
+    </svg>
+    <router-link to="/">Accueil</router-link>
+    |
+    <router-link to="/about">À propos</router-link>
+  </nav>
+
+  <router-view/>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+nav {
+  padding: 30px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 0 10px;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
