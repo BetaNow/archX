@@ -3,25 +3,54 @@
     <svg width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 375">
       <path fill="#005cf5" d="M500,250v125h-125v-125h.43v-.43c0-69.04-55.96-125-125-125s-125,55.96-125,125v.43h124.57v125h-125v-125H0C0,111.93,111.93,0,250,0s250,111.93,250,250Z"/>
     </svg>
-    <router-link to="/">Accueil</router-link>
+    <RouterLink to="/">{{ t.navigation?.home || 'Home' }}</RouterLink>
     |
-    <router-link to="/news">News</router-link>
+    <RouterLink to="/news">{{ t.navigation?.news || 'News' }}</RouterLink>
     |
-    <router-link to="/open-source">Open source</router-link>
+    <RouterLink to="/open-source">{{ t.navigation?.open-source || 'Open Source' }}</RouterLink>
     |
-    <router-link to="/forum">Forum</router-link>
+    <RouterLink to="/forum">{{ t.navigation?.forum || 'Forum' }}</RouterLink>
     |
-    <router-link to="/articles">Articles</router-link>
+    <RouterLink to="/articles">{{ t.navigation?.articles || 'Articles' }}</RouterLink>
     |
-    <router-link to="/write-up">Write-Up</router-link>
+    <RouterLink to="/write-up">{{ t.navigation?.write-up || 'Write-Up' }}</RouterLink>
     |
-    <router-link to="/ressources">Ressources</router-link>
+    <RouterLink to="/ressources">{{ t.navigation?.ressources || 'Ressources' }}</RouterLink>
+
+    <LanguageSelector @language-changed="updateTranslations" />
   </nav>
 
-  <router-view/>
+  <RouterView :translations="t" />
 </template>
 
+<script>
+import LanguageSelector from './components/LanguageSelector.vue'
+
+export default {
+  name: 'App',
+  components: { LanguageSelector },
+  data() {
+    return {
+      t: {}
+    }
+  },
+  methods: {
+    updateTranslations(translations) {
+      this.t = translations
+    }
+  }
+}
+</script>
+
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
 nav {
   padding: 30px;
 }
