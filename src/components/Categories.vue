@@ -1,6 +1,6 @@
 <template>
-  <div class="news">
-    <Categories :content="translations.news" :translations="{ all: translations.news.viewMode.all }"/>
+  <div class="page-content">
+    <Categories :content="translations.openSource" :translations="{ all: translations.openSource.viewMode.all }" />
   </div>
 </template>
 

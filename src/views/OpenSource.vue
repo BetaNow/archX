@@ -22,7 +22,6 @@
           <template v-if="category.subtitles">
             <div v-for="(subtitle, subKey) in category.subtitles" :key="subKey">
               <h3>{{ subtitle }}</h3>
-              <!-- Content specific to this subtitle -->
             </div>
           </template>
           <!-- Items -->
@@ -36,7 +35,6 @@
       <template v-else>
         <div class="category-section">
           <h2>{{ translations.openSource.categories[viewMode].title }}</h2>
-          <!-- Selected category content -->
           <div
               v-for="(item, itemKey) in translations.openSource.categories[viewMode].items"
               :key="itemKey"
