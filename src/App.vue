@@ -7,13 +7,13 @@
     |
     <RouterLink to="/news">{{ t.navigation?.news || 'News' }}</RouterLink>
     |
-    <RouterLink to="/open-source">{{ t.navigation?.open-source || 'Open Source' }}</RouterLink>
+    <RouterLink to="/open-source">{{ t.navigation?.openSource || 'Open Source' }}</RouterLink>
     |
     <RouterLink to="/forum">{{ t.navigation?.forum || 'Forum' }}</RouterLink>
     |
     <RouterLink to="/articles">{{ t.navigation?.articles || 'Articles' }}</RouterLink>
     |
-    <RouterLink to="/write-up">{{ t.navigation?.write-up || 'Write-Up' }}</RouterLink>
+    <RouterLink to="/write-up">{{ t.navigation?.writeUp || 'Write-Up' }}</RouterLink>
     |
     <RouterLink to="/ressources">{{ t.navigation?.ressources || 'Ressources' }}</RouterLink>
 
