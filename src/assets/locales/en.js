@@ -236,4 +236,24 @@ export default {
             }
         }
     },
+    forum: {
+        title: 'Your looking for a place with plenty of passionate like you ? You can find here most of the forum/discord server I\'m using.',
+        categories: {
+            crypto: {
+                title: 'r/crypto',
+                link: 'https://www.reddit.com/r/crypto/',
+                description: 'Reddit main sub for cryptography. You can ask questions, find recent plublished paper and chat with the community.'
+            },
+            discord: {
+                title: 'Cryptohack\'s discord server',
+                link: 'https://discord.com/invite/h9E7cna5pV',
+                description: 'A wonderful community of cryptographers, you can ask for help, follow the news, share memes and a lot more!'
+            },
+            slashdot: {
+                title: 'Slashdot',
+                link: 'https://slashdot.org/',
+                description: 'This is a social news website that originally billed itself as "News for Nerds. Stuff that Matters". It features news stories on science, technology, and politics that are submitted and evaluated by site users and editors like a kind of Reddit.'
+            }
+        }
+    }
 }
