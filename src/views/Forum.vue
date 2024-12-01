@@ -1,6 +1,7 @@
 <template>
   <div class="forum">
-    <p>{{ translations.forum.title }}</p>
+    <h1>{{ translations.forum.title }}</h1>
+    <p>{{ translations.forum.description }}</p>
     <div v-for="(category, catKey) in translations.forum.categories" :key="catKey" class="category-section">
       <h2><a :href="category.link">{{ category.title }}</a></h2>
       <p>{{ category.description }}</p>

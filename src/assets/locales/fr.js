@@ -3,6 +3,7 @@ export default {
         home: 'Accueil',
         news: 'Actualités',
         openSource: 'Open Source',
+        forum: 'Forum',
     },
     home: {
         title: 'ArchX - Cryptographie et informatique',
@@ -237,7 +238,8 @@ export default {
         }
     },
     forum: {
-        title: 'Looking for a place filled with passionate people like you? Here you can find the forums and Discord servers I use the most.',
+        title: 'Forum',
+        description: 'Looking for a place filled with passionate people like you? Here you can find the forums and Discord servers I use the most.',
         categories: {
             crypto: {
                 title: 'r/crypto',
