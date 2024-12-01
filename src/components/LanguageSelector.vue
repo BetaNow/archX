@@ -20,12 +20,21 @@ export default {
   },
   methods: {
     changeLang() {
-      const translations = this.currentLang === 'en' ? en : fr
-      this.$emit('language-changed', translations)
+      const translations = this.currentLang === 'en' ? en : fr;
+      this.$emit('language-changed', translations);
+
+      // Save the selected language to localStorage
+      localStorage.setItem('selectedLang', this.currentLang);
     }
   },
   mounted () {
-    this.changeLang()
+    // Load the selected language from localStorage
+    const savedLang = localStorage.getItem('selectedLang');
+    if (savedLang) {
+      this.currentLang = savedLang;
+    }
+
+    this.changeLang();
   }
 }
 </script>
