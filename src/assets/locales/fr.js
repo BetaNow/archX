@@ -1,130 +1,236 @@
 export default {
     navigation: {
         home: 'Accueil',
-        openSource: 'Open Source'
+        news: 'Actualités',
+        openSource: 'Open Source',
     },
     home: {
         title: 'ArchX - Cryptographie et informatique',
         welcome: 'Bienvenue sur archX !',
         intro: 'Je suis un étudiant français de 20 ans passionné par la cybersécurité, la cryptographie et bien d\'autres domaines. Je suis actuellement en troisième année de licence en informatique.',
-        about: 'J\'ai commencé la programmation avec Python et C et je m\'intéresse principalement à l\'implémentation d\'algorithmes cryptographiques. J\'aime la sécurité et je regarde actuellement des projets open source à ce sujet (comme openSSL) pour commencer à contribuer. J\'ai également été diagnostiqué asperger il y a quelques années.',
-        purpose: 'Le but de ce blog est de regrouper les ressources que je trouve. C\'est comme un résumé de mon expérience, de ce qui m\'a aidé et des choses que je veux partager. Vous pouvez également trouver des articles et des write-up que j\'ai écrits ainsi qu\'une bibliothèque que je maintiens avec beaucoup de livres et d\'articles intéressants.',
+        about: 'J\'ai commencé la programmation avec Python et C, et je suis particulièrement intéressé par l\'implémentation d\'algorithmes cryptographiques. J\'aime la sécurité et je regarde actuellement des projets open source dans ce domaine (comme openSSL) pour commencer à y contribuer. J\'ai également été diagnostiqué Asperger il y a quelques années maintenant.',
+        purpose: 'Le but de ce blog est de regrouper les ressources que je trouve. C\'est comme un résumé de mon expérience, ce qui m\'a aidé et ce que je veux partager. Vous pouvez également trouver des articles et des write-up que j\'ai écrits ainsi qu\'une bibliothèque que je maintiens avec beaucoup de livres et d\'articles intéressants.',
         contact: 'Contactez-moi ici :'
     },
-    openSource: {
-        title: 'Open Source',
-        description: 'Chaque jour, je découvre des projets open source qui attirent mon attention. Ces projets sont respectueux de la vie privée, innovants ou ouverts aux contributions. Vous trouverez ici une sélection d\'entre eux, classés par catégories.',
+    news: {
+        title: 'Actualités',
+        description: 'Voici toutes les sources que j\'utilise pour rester informé sur différents sujets.',
         viewMode: {
-            all: 'Show All',
-            category: 'By Category'
+            all: 'Tout afficher',
+            category: 'Par catégorie'
         },
         categories: {
             cryptography: {
-                title: 'Cryptography',
+                title: 'Cryptographie',
+                items: {
+                    schneierOnSecurity: {
+                        description: 'Bruce Schneier est un technologue d\'intérêt public, travaillant à l\'intersection de la sécurité, de la technologie et des personnes. Il écrit sur les questions de sécurité sur son blog depuis 2004 et sur sa newsletter depuis 1998.',
+                        link: 'https://www.schneier.com/news/',
+                        title: 'Schneier on Security: News'
+                    },
+                    cryptoGram: {
+                        description: 'Une newsletter mensuelle gratuite résumant ses articles.',
+                        link: 'https://www.schneier.com/crypto-gram/',
+                        title: 'Schneier on Security: Crypto-Gram Newsletter'
+                    },
+                    ePrintArchive: {
+                        description: 'Un hub majeur pour les articles de cryptographie dans la communauté. Vous pouvez rechercher des articles par tags et date de publication.',
+                        link: 'https://eprint.iacr.org/',
+                        title: 'ePrint Archive'
+                    },
+                    cryptome: {
+                        description: 'Cryptome publie des documents interdits par les gouvernements. Vous pouvez également vous abonner à une liste de diffusion.',
+                        link: 'https://cryptome.org/',
+                        title: 'Cryptome'
+                    },
+                    arcsi: {
+                        description: 'Actualités en cryptographie.',
+                        link: 'https://www.arcsi.fr/actualites.php',
+                        title: 'ARCSI 🇫🇷'
+                    }
+                },
+            },
+            quantumComputing: {
+                title: 'Informatique Quantique',
+                items: {
+                    olivierEzratty: {
+                        description: 'Podcast, vidéos et livres sur l\'actualité française de l\'informatique quantique. Olivier Ezratty est un consultant et auteur qui donne des mises à jour fréquentes sur l\'informatique quantique.',
+                        link: 'https://www.oezratty.net/wordpress/',
+                        title: 'Opinions Libres: Blog d\'Olivier Ezratty 🇫🇷'
+                    },
+                    pqcChallenge: {
+                        description: 'Obtenez toutes les mises à jour sur les nouveaux algorithmes post-quantiques. Ce concours a été créé pour sélectionner de nouveaux cryptosystèmes qui ne seront pas cassés par les ordinateurs quantiques.',
+                        link: 'https://csrc.nist.gov/projects/post-quantum-cryptography',
+                        title: 'PQC Challenge du NIST'
+                    },
+                    redditQuantumComputing: {
+                        description: 'Bien sûr, Reddit a sa propre communauté pour l\'informatique quantique. Ici, vous pouvez trouver beaucoup de ressources intéressantes, poser des questions et discuter.',
+                        link: 'https://www.reddit.com/r/QuantumComputing/',
+                        title: 'r/QuantumComputing'
+                    }
+                },
+            },
+            ai: {
+                title: 'Intelligence Artificielle',
+                items: {
+                    huggingfaceBlog: {
+                        description: 'Hugging Face est principalement connu pour sa plateforme qui permet aux utilisateurs de partager des modèles d\'apprentissage automatique et des jeux de données et de présenter leur travail. Dans ce blog, vous pouvez lire les dernières nouvelles de l\'entreprise, les nouvelles versions de modèles et même des tutoriels.',
+                        link: 'https://huggingface.co/blog',
+                        title: 'Blog de Hugging Face'
+                    },
+                    nvidiaNews: {
+                        description: 'Dernières actualités de Nvidia. Ce lien fournit également des mises à jour pour le HPC et pas uniquement l\'IA.',
+                        link: 'https://nvidianews.nvidia.com/news/latest',
+                        title: 'Actualités Nvidia'
+                    },
+                    openAINews: {
+                        description: 'Le blog OpenAI est structuré en plusieurs catégories : Produit, Recherche, Sécurité & alignement, Histoires, Entreprise et Plus. C\'est excellent car vous avez des nouvelles liées à OpenAI mais aussi des actualités globales sur l\'IA.',
+                        link: 'https://openai.com/news/',
+                        title: 'Actualités OpenAI'
+                    }
+                },
+            },
+            cyberSecurity: {
+                title: 'Cybersécurité',
+                items: {
+                    theHackerNews: {
+                        description: 'Un site web très célèbre qui relaie les nouvelles de fuites de données, cyberattaques, vulnérabilités et webinaires sur le hacking. Avec THN, vous êtes rapidement informé de toute nouvelle attaque et faille de sécurité.',
+                        link: 'https://thehackernews.com/',
+                        title: 'The Hacker News'
+                    },
+                    simpleAnalytics: {
+                        description: 'Simple Analytics est une alternative européenne à Google Analytics. Dans ce blog, vous pouvez comprendre pourquoi nous devrions arrêter d\'utiliser Google Analytics et comment SA peut faire la même chose tout en respectant votre vie privée. Une newsletter est également disponible.',
+                        link: 'https://www.simpleanalytics.com/blog',
+                        title: 'Blog Simple Analytics'
+                    },
+                    reversingLabs: {
+                        description: 'ReversingLabs est une entreprise de cybersécurité qui fournit des logiciels et analyses de sécurité. Leur blog...',
+                        link: 'https://www.reversinglabs.com/blog',
+                        title: 'ReversingLabs'
+                    },
+                    polySecure: {
+                        description: 'Podcast francophone sur la cybersécurité. Pour les professionnels et les passionnés.',
+                        link: 'https://polysecure.ca/',
+                        title: 'PolySécure Podcast'
+                    }
+                },
+            },
+        },
+    },
+    openSource: {
+        title: 'Open Source',
+        description: 'Chaque jour, je découvre des projets open source qui attirent mon attention. Ces projets sont respectueux de la vie privée, novateurs ou propices aux contributions. Ici, vous pouvez en trouver un grand nombre classés par catégories',
+        viewMode: {
+            all: 'Tout afficher',
+            category: 'Par catégorie'
+        },
+        categories: {
+            cryptography: {
+                title: 'Cryptographie',
                 items: {
                     openssl: {
                         title: 'OpenSSL',
                         link: 'https://github.com/openssl/openssl',
-                        description: 'A robust, commercial-grade, full-featured Open Source Toolkit for the TLS (formerly SSL), DTLS and QUIC (currently client side only) protocols. The documentation isn\'t the best but you can use openSSL\'s library to include header like BigNum, AES, RSA and have fun with it.'
+                        description: 'OpenSSL est une boîte à outils Open Source robuste de qualité commerciale pour les protocoles TLS (anciennement SSL), DTLS et QUIC (actuellement côté client uniquement). La documentation n\'est pas la meilleure mais vous pouvez utiliser la bibliothèque OpenSSL pour inclure des en-têtes comme BigNum, AES, RSA et expérimenter avec.'
                     },
                     pycryptodome: {
                         title: 'Pycryptodome',
                         link: 'https://github.com/Legrandin/pycryptodome',
-                        description: 'A self-contained cryptographic library for Python. I think this open source repository is the best for beginners to make their first contribution. Issues are easy to understand, the project isn\'t big compare to openSSL and you can have a good overview of the whole project.'
+                        description: 'Une bibliothèque cryptographique autonome pour Python. Je pense que ce dépôt open source est le meilleur pour les débutants pour faire leur première contribution. Les problèmes sont faciles à comprendre, le projet n\'est pas grand comparé à OpenSSL et vous pouvez avoir une bonne vue d\'ensemble du projet.'
                     },
                     mbedtls: {
                         title: 'MbedTLS',
                         link: 'https://github.com/Mbed-TLS/mbedtls',
-                        description: 'An open source, portable, easy to use, readable and flexible TLS library, and reference implementation of the PSA Cryptography API. The documentation is way better than OpenSSL so you can more easily understand the library and code with it.'
+                        description: 'Une bibliothèque TLS open source, portable, facile à utiliser, lisible et flexible, et une implémentation de référence de l\'API PSA Cryptography. La documentation est bien meilleure que celle d\'OpenSSL, vous pouvez donc plus facilement comprendre la bibliothèque et coder avec.'
                     },
                     zamaai: {
                         title: 'Zama-AI',
                         link: 'https://github.com/zama-ai',
-                        description: 'An open source cryptography company building state-of-the-art FHE (Fully Homomorphic Encryption) solutions for blockchain and AI. The project is interesting because it introduces you to FHE and have a bounty program so if your are good and motivated you even can make a bit of money.'
+                        description: 'Est une entreprise de cryptographie open source qui développe des solutions FHE (Fully Homomorphic Encryption) de pointe pour la blockchain et l\'IA. Le projet est intéressant car il vous initie au FHE et dispose d\'un programme de primes, donc si vous êtes bon et motivé, vous pouvez même gagner un peu d\'argent.'
                     },
                     cryptocoding: {
                         title: 'Cryptocoding',
                         link: 'https://github.com/veorq/cryptocoding',
-                        description: 'A repository maintained by Jean-Philippe Aumasson, a great cryptographer. It lists "coding rules" for implementations of cryptographic operations, and more generally for operations involving secret or sensitive values. This page is a very good ressource if you want to develop your own implementation. Of course those recommendations aren\'t enought for a well secured implementation but as a beginner it is a good training.'
+                        description: 'Est un dépôt maintenu par Jean-Philippe Aumasson, un excellent cryptographe. Il répertorie les \'règles de codage\' pour les implémentations d\'opérations cryptographiques, et plus généralement pour les opérations impliquant des valeurs secrètes ou sensibles. Cette page est une très bonne ressource si vous voulez développer votre propre implémentation. Bien sûr, ces recommandations ne suffisent pas pour une implémentation bien sécurisée, mais en tant que débutant, c\'est un bon entraînement.'
                     },
                     cs2p: {
                         title: 'CS2P',
                         link: 'https://github.com/C2SP/C2SP',
-                        description: 'The Community Cryptography Specification Project is a project that facilitates the maintenance of cryptography specifications using software development methodologies. In other words, C2SP applies the successful processes of open source software development and maintenance to specification documents.'
+                        description: 'Le Community Cryptography Specification Project est un projet qui facilite la maintenance des spécifications cryptographiques en utilisant des méthodologies de développement logiciel. En d\'autres termes, C2SP applique les processus réussis du développement et de la maintenance de logiciels open source aux documents de spécification.'
                     }
                 }
             },
             cybersecurity: {
-                title: 'Cybersecurity',
+                title: 'Cybersécurité',
                 items: {
                     gun: {
                         title: 'GUN',
                         link: 'https://github.com/amark/gun',
-                        description: 'A peer2peer protocol that share data between several machines in live. With encryption, serializaion of the data and more you can easily build an application based on this protocol like alternative to Youtube, Zoom or Facebook. The protocol is implemented in JS and you can integrate it easily in your HTML with CDNs headers or directly in your JS code.'
+                        description: 'Est un protocole peer2peer qui partage des données entre plusieurs machines en direct. Avec le chiffrement, la sérialisation des données et plus encore, vous pouvez facilement créer une application basée sur ce protocole comme alternative à Youtube, Zoom ou Facebook. Le protocole est implémenté en JS et vous pouvez l\'intégrer facilement dans votre HTML avec les en-têtes CDN ou directement dans votre code JS.'
                     },
                     pirogueToolSuite: {
                         title: 'PiRogueToolSuite',
                         link: 'https://github.com/PiRogueToolSuite',
-                        description: 'An open-source consensual digital forensic analysis and incident response solution. The project consists of an open-source tool suite that provides a comprehensive mobile device forensics and network traffic analysis platform targeting mobile devices, both for Android and iOS. You have two main tools: PiRogue, a RaspberryPI analyzing network traffic in real time and Colander, an incident response and knowledge management platform.'
+                        description: 'Est une solution open-source d\'analyse forensique numérique consensuelle et de réponse aux incidents. Le projet consiste en une suite d\'outils open-source qui fournit une plateforme complète d\'analyse forensique et de trafic réseau pour les appareils mobiles, tant pour Android que pour iOS. Vous avez deux outils principaux : PiRogue, un RaspberryPI analysant le trafic réseau en temps réel et Colander, une plateforme de gestion des connaissances et de réponse aux incidents.'
                     },
                     cyberDefenseMatrix: {
                         title: 'The Cyber Defense Matrix',
                         link: 'https://cyberdefensematrix.com/',
-                        description: 'A framework created by @sounilyu to help you expertly navigate the cybersecurity landscape. Basically, this tool help you to visual what aspect of security you need to priorize for your structure or product. It has several use cases and the first dimension of the matrix is based on the NIST Cybersecurity Framework. Read the website to learn more.'
+                        description: 'Un cadre créé par @sounilyu pour vous aider à naviguer expertement dans le paysage de la cybersécurité. Fondamentalement, cet outil vous aide à visualiser quels aspects de la sécurité vous devez prioriser pour votre structure ou produit. Il a plusieurs cas d\'utilisation et la première dimension de la matrice est basée sur le cadre de cybersécurité du NIST. Lisez le site web pour en savoir plus.'
                     }
                 }
             },
             ai: {
-                title: 'Artificial Intelligence',
+                title: 'Intelligence Artificielle',
                 items: {
                     ollama: {
                         title: 'Ollama',
                         link: 'https://github.com/ollama/ollama',
-                        description: 'A LLM runners allowing you to interact locally with models like Lalla3, Mistral and more. You can interact with the model through a chat and you can use it for any of your needs. You don\'t even need a GPU, the minimal requirement is a recent CPU for decent performance (like 10th gen for Intel).'
+                        description: 'Est un exécuteur de LLM permettant d\'interagir localement avec des modèles comme Llama, Mistral et plus encore. Vous pouvez interagir avec le modèle via un chat et l\'utiliser pour tous vos besoins. Vous n\'avez même pas besoin d\'un GPU, la configuration minimale requise est un CPU récent pour des performances décentes (comme la 10e génération pour Intel).'
                     },
                     openWebUI: {
                         title: 'Open WebUI',
                         link: 'https://docs.openwebui.com/',
-                        description: 'An extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline. It supports various LLM runners, including Ollama and OpenAI-compatible APIs.'
+                        description: 'Est une interface Web auto-hébergée extensible, riche en fonctionnalités et conviviale, conçue pour fonctionner entièrement hors ligne. Elle prend en charge divers exécuteurs de LLM, y compris Ollama et les API compatibles OpenAI.'
                     },
                     mlpack: {
                         title: 'MLpack',
                         link: 'https://github.com/mlpack/mlpack',
-                        description: 'A fast, header-only C++ Machine Learning library. It aims to implement a wide array of machine learning methods and functions as a "swiss army knife".'
+                        description: 'Une bibliothèque C++ rapide, header-only pour le Machine Learning. Elle vise à implémenter un large éventail de méthodes et fonctions d\'apprentissage automatique comme un \'couteau suisse\'.'
                     },
                     abTrap: {
                         title: 'AB-TRAP',
                         link: 'https://github.com/c2dc/AB-TRAP',
-                        description: 'A step-by-step guide for building a ML model for IDS/IPS.'
+                        description: 'Est un guide étape par étape pour construire un modèle ML pour IDS/IPS.'
                     },
                     realCyberSecurityDatasets: {
                         title: 'Real-CyberSecurity-Datasets',
                         link: 'https://github.com/gfek/Real-CyberSecurity-Datasets',
-                        description: 'Public datasets to help you tackle various cyber security problems using Machine Learning or other means.'
+                        description: 'Jeux de données publics pour vous aider à résoudre divers problèmes de cybersécurité en utilisant le Machine Learning ou d\'autres moyens.'
                     }
                 }
             },
             programming: {
-                title: 'Programming',
+                title: 'Programmation',
                 subtitles: {
-                    web: 'Web Programming',
-                    hpc: 'High Performance Computing'
+                    web: 'Programmation Web',
+                    hpc: 'Calcul Haute Performance'
                 },
                 items: {
                     tauri: {
                         title: 'Tauri',
                         link: 'https://tauri.app/',
-                        description: 'A framework for building tiny and fast binaries for cross-platform desktop application. Developers can integrate any front-end framework that compiles to HTML, JS and CSS for building their user interface. The backend of the application is a rust-sourced binary with an API that the front-end can interact with. Tauri is an alternative to Electron and have the benefit to not be based on Chromium.'
+                        description: 'Est un framework pour créer des binaires légers et rapides pour les applications de bureau multi-plateformes. Les développeurs peuvent intégrer n\'importe quel framework front-end qui compile en HTML, JS et CSS pour construire leur interface utilisateur. Le backend de l\'application est un binaire basé sur Rust avec une API avec laquelle le front-end peut interagir. Tauri est une alternative à Electron et a l\'avantage de ne pas être basé sur Chromium.'
                     },
                     bendLanguage: {
                         title: 'Bend language',
                         link: 'https://github.com/HigherOrderCO/Bend',
-                        description: 'A promising high-level, massively parallel programming language. Bend have the particularity to parallelize automatically every single mathematical operation allowing you to exploit 100% of your GPU without having to handle thread creation, locks, mutexes, or atomics. Bend is cross-platform, available on WSL2 and can support 10000 concurrent thread. Only Nvidia\'s GPU are supported for the moment.'
+                        description: 'Un langage de programmation massivement parallèle de haut niveau prometteur. Bend a la particularité de paralléliser automatiquement chaque opération mathématique vous permettant d\'exploiter 100% de votre GPU sans avoir à gérer la création de threads, les verrous, les mutex ou les atomiques. Bend est multi-plateforme, disponible sur WSL2 et peut supporter 10000 threads simultanés. Seuls les GPU Nvidia sont supportés pour le moment.'
                     },
                     algorithmica: {
                         title: 'Algorithmica',
                         link: 'https://en.algorithmica.org/hpc/',
-                        description: 'An open-access web book dedicated to the art and science of computing by Sergey Slotin. Its intended audience is everyone from performance engineers and practical algorithm researchers to undergraduate computer science students.'
+                        description: 'Est un livre web en accès libre dédié à l\'art et à la science de l\'informatique par Sergey Slotin. Son public cible va des ingénieurs de performance et des chercheurs en algorithmes pratiques aux étudiants de premier cycle en informatique.'
                     }
                 }
             }

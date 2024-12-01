@@ -10,6 +10,12 @@ import Categories from '../components/Categories.vue';
 export default {
   name: 'OpenSource',
   components: { Categories },
+  props: {
+    translations: {
+      type: Object,
+      required: true
+    }
+  }
 };
 </script>
 
