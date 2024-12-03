@@ -3,7 +3,9 @@ export default {
         home: 'Home',
         news: 'News',
         openSource: 'Open Source',
-        forum: 'Forum'
+        forum: 'Forum',
+        articles: 'Articles',
+        writeUp: 'Write-Up',
     },
     home: {
         title: 'ArchX - Cryptography and computing',
@@ -255,6 +257,89 @@ export default {
                 title: 'Slashdot',
                 link: 'https://slashdot.org/',
                 description: 'This is a social news website that originally billed itself as "News for Nerds. Stuff that Matters". It features news stories on science, technology, and politics that are submitted and evaluated by site users and editors like a kind of Reddit.'
+            }
+        }
+    },
+    articles: {
+        title: 'Articles',
+        description: 'The most difficult part of writing an article is often finding the time to write it. And also building up the confidence to post it!',
+        categories: {
+            crypto: {
+                title: 'Modular Arithmetic - Congruence 🇫🇷',
+                link: 'https://www.reddit.com/r/crypto/',
+                description: 'An introductory course on congruences. Suitable for first-year undergraduate science students (L1).'
+            },
+            discord: {
+                title: 'National Mathematics Olympiad 2021 Technological Track 🇫🇷',
+                link: 'https://discord.com/invite/h9E7cna5pV',
+                description: 'My solutions for an Olympiad problem set organized by the Ministry of Education.'
+            }
+        }
+    },
+    writeUp: {
+        title: 'Write-Up',
+        description: 'The first three write-ups are mine, the others are some interesting ones I\'ve found.',
+        items: {
+            rsaBookCtf: {
+                title: 'RSA book CTF',
+                link: 'https://github.com/Bl4omArchie/Write-Up/blob/main/crypto/RsaBookCTF.md',
+                description: 'I participated to the second edition of the bookCTF, there is two simple challenge with RSA'
+            },
+            davinciUtCtf: {
+                title: 'DaVinci CTF and utCTF',
+                link: 'https://github.com/Bl4omArchie/Write-Up/blob/main/crypto/dvCTF-utCTF.md',
+                description: 'Two write-up that I\'ve made on two CTF at the same time. The first challenge is about RSA and the second one DH'
+            },
+            frankRsa: {
+                title: 'Frank, recovering a full RSA private key',
+                link: 'https://ret2school.github.io/post/writeuprsa/',
+                description: 'A good challenge that I\'v done with a friend at the Midnight Sun CTF. We get a privet key with hidden part and from the clear part, we need to recover the entire key'
+            },
+            xoringNetwork: {
+                title: 'Xoring Network',
+                link: 'https://siben.eu/xoring-networks.html',
+                description: 'An hard challenge that I tryied at the 2020 FCSC. This challenge is really hard and the code solution is in C and python'
+            },
+            babyXoringNetwork: {
+                title: 'Baby Xoring Network',
+                link: 'https://www.hackademint.org/Baby_Xoring_Networks',
+                description: 'Same challenge from the same CTF but less hard and you only need python'
+            },
+            cryptoCTF2020: {
+                title: '2020 CryptoCTF',
+                link: 'https://hackmd.io/@jack4818/B1RXIH_ZD',
+                description: 'All the write-up from the 2020 CryptoCTF by the Cryptohack team'
+            },
+            cryptoCTF2021: {
+                titles: [
+                    {
+                        title: '2021 CryptoCTF',
+                        link: 'https://hackmd.io/DBUeU7cMQlihBUVSYPhJlQ',
+                    },
+                    {
+                        title: '2021 CryptoCTF',
+                        link: 'https://hackmd.io/81k7HZi1QVCcxT0rksbGAA',
+                    },
+                    {
+                        title: '2021 CryptoCTF',
+                        link: 'https://hackmd.io/p0CTvBKbSpSfFmLLoNjw0Q#Wolf',
+                    },
+                    {
+                        title: '2021 CryptoCTF unsolved flag',
+                        link: 'https://blog.cryptohack.org/cryptoctf2021-hard#tiny-ecc'
+                    }
+                ],
+                description: 'All the write-up from the 2021 CryptoCTF by the Cryptohack team (i was into it ! but they were too fast for me xD )'
+            },
+            fcsc2021: {
+                title: '2021 FCSC',
+                link: 'https://bitsdeep.com/write-ups/fcsc-2021-write-ups-for-the-crypto-challenges/',
+                description: 'You can find all the write-up about crypto of the 2021 FCSC ctf made by Enoent'
+            },
+            cakeCTF2021: {
+                title: 'CakeCTF 2021 Writeups',
+                link: 'https://jsur.in/posts/2021-08-29-cakectf-2021-writeups#party-ticket',
+                description: 'Nice write-up about coppersmith'
             }
         }
     }
