@@ -6,6 +6,7 @@ export default {
         forum: 'Forum',
         articles: 'Articles',
         writeUp: 'Write-Up',
+        ressource: 'Ressources',
     },
     home: {
         title: 'ArchX - Cryptography and computing',
@@ -340,6 +341,130 @@ export default {
                 title: 'CakeCTF 2021 Writeups',
                 link: 'https://jsur.in/posts/2021-08-29-cakectf-2021-writeups#party-ticket',
                 description: 'Nice write-up about coppersmith'
+            }
+        }
+    },
+    resources: {
+        title: 'Resources',
+        description: 'Welcome to my library, I\'m storing nice reading and papers I had to use for my projects',
+        researchTips: {
+            title: 'Research tips',
+            description: 'Here are some tips to search for a document by yourself:',
+            tips: [
+                {
+                    description: 'Use filetype=pdf in your search. You will find exclusively pdf files and you can find all the books you\'re looking for. Try it with the search bar below. For example: Mathematics of Public Key Cryptography filetype=pdf'
+                },
+                {
+                    description: 'Use different search engines like duckduckgo or yandex'
+                },
+                {
+                    description: 'Find websites with pdf databases',
+                    links: [
+                        { title: 'ePrint', url: 'https://eprint.iacr.org/complete/' },
+                        { title: 'IETF datatracker', url: 'https://datatracker.ietf.org/' },
+                        { title: 'pdfdrive.com', url: 'https://www.pdfdrive.com/' }
+                    ]
+                }
+            ]
+        },
+        table: {
+            title: 'Title',
+            authors: 'Author(s)',
+            date: 'Posted',
+            description: 'Description',
+        },
+        categories: {
+            cryptography: {
+                color: '#bc5041',
+                items: [
+                    {
+                        title: 'SERIOUS CRYPTOGRAPHY a Practical: Introduction to Modern Encryption',
+                        authors: 'Jean-Philippe Aumasson',
+                        date: '2018',
+                        description: 'Interesting book for beginners in cryptography. Talks about classic, modern and quantum cryptography with examples of application in python or golang. Everything is pretty easy to understand and gives you a really good overview of cryptography.',
+                        link: 'https://palaiologos.rocks/library/Serious%20Cryptography%20Jean-Philippe%20Aumasson.pdf'
+                    },
+                    {
+                        title: 'Mathematics of Public Key Cryptography',
+                        authors: 'Steven Galbraith',
+                        date: '2012',
+                        description: 'This book gives a rigorous presentation of most of the mathematics underlying public key cryptography. Our main focus is mathematics. We put mathematical precision and rigour ahead of generality, practical issues in real-world cryptography, or algorithmic optimality.',
+                        link: 'https://www.math.auckland.ac.nz/~sgal018/crypto-book/main.pdf'
+                    },
+                    {
+                        title: 'An Introduction to Mathematical Cryptography',
+                        authors: 'Hoffstein, Jeffrey, Pipher, Jill, Silverman, J.H',
+                        description: 'Detailed introduction to elliptic curves and how they\'re used in cryptography, including the "hot" recent topic of elliptic curve pairing-based cryptography. Detailed introduction to lattices and lattice based cryptography.',
+                        link: 'https://link.springer.com/book/10.1007/978-1-4939-1711-2'
+                    }
+                ]
+            },
+            quantum: {
+                color: '#d2aa85',
+                items: [
+                    {
+                        title: 'Understanding Quantum Technologies',
+                        authors: 'Olivier Ezratty',
+                        date: 'September 27, 2021',
+                        description: 'Olivier Ezratty advises and trains businesses and public services in the development of their innovation strategies around deep techs and, in particular, quantum technologies.',
+                        link: 'https://www.oezratty.net/wordpress/2021/understanding-quantum-technologies-2021/'
+                    },
+                    {
+                        title: 'Introductory Quantum Computing',
+                        description: 'This online document helps absolute beginners to pursue future directions in coding and Quantum Computing. The lesson starts with fundamentals of qubits, quantum gates and quantum circuits and quantum algorithms.',
+                        link: 'https://q4quanta.github.io/qcdocs/'
+                    }
+                ]
+            },
+            maths: {
+                color: '#9361ef',
+                items: [
+                    {
+                        title: '🇫🇷 Animal crossing est NP difficile',
+                        description: 'Of course, saying Animal Crossing is NP-Hard is an abuse of language... However, the game mechanics are complex enough to quickly bring up such problems!',
+                        link: 'https://bl4omarchie.github.io/archX/pdf/animal_crossing.pdf'
+                    },
+                    {
+                        title: '🇫🇷 PGCD - PPCM Théorèmes de Bézout et de Gauss',
+                        authors: 'Paul Milan',
+                        date: 'July 15, 2016',
+                        description: 'Course with demonstration of GCD, LCM, Bézout\'s and Gauss\'s theorems. Number theory and modular arithmetic',
+                        link: 'https://www.lyceedadultes.fr/sitepedagogique/documents/math/mathTermSspe/02_PGCD_PPCM/02_cours_pgcd_ppcm_bezout_gauss.pdf'
+                    }
+                ]
+            },
+            standards: {
+                color: '#0e95c1',
+                items: [
+                    {
+                        title: 'Digital Signature Standard - FIPS PUB 186-4',
+                        authors: 'NIST',
+                        date: 'July 2013',
+                        description: 'This Standard specifies a suite of algorithms that can be used to generate a digital signature. Digital signatures are used to detect unauthorized modifications to data and to authenticate the identity of the signatory.',
+                        link: 'https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.186-4.pdf'
+                    },
+                    {
+                        title: 'Recommendation for Pair-Wise Key Establishment Using Integer Factorization Cryptography',
+                        authors: 'NIST',
+                        date: 'March 2019',
+                        description: 'This Recommendation specifies key establishment schemes using integer factorization cryptography (in particular, RSA).',
+                        link: 'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Br2.pdf'
+                    },
+                    {
+                        title: 'Announcing the ADVANCED ENCRYPTION STANDARD (AES)',
+                        authors: 'NIST',
+                        date: 'November 26, 2001',
+                        description: 'FIPS approved standard for the Advanced Encryption Standard (AES) cryptographic algorithm',
+                        link: 'https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf'
+                    },
+                    {
+                        title: 'PKCS #1: RSA Cryptography Specifications Version 2.2 - rfc8017',
+                        authors: 'Kathleen M. Moriarty, Burt Kaliski, Jakob Jonsson, Andreas Rusch',
+                        date: 'November 2016',
+                        description: 'This document provides recommendations for the implementation of public-key cryptography based on the RSA algorithm, covering cryptographic primitives, encryption schemes, signature schemes with appendix, and ASN.1 syntax.',
+                        link: 'https://datatracker.ietf.org/doc/pdf/draft-moriarty-pkcs1-01.pdf'
+                    }
+                ]
             }
         }
     }

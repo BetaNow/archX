@@ -5,6 +5,8 @@ export default {
         openSource: 'Open Source',
         forum: 'Forum',
         articles: 'Articles',
+        writeUp: 'Write-Up',
+        resources: 'Ressources',
     },
     home: {
         title: 'ArchX - Cryptographie et informatique',
@@ -339,6 +341,130 @@ export default {
                 title: 'Write-ups CakeCTF 2021',
                 link: 'https://jsur.in/posts/2021-08-29-cakectf-2021-writeups#party-ticket',
                 description: 'Un bon write-up sur Coppersmith'
+            }
+        }
+    },
+    resources: {
+        title: 'Ressources',
+        description: 'Bienvenue dans ma bibliothèque, je stocke ici de bonnes lectures et des articles que j\'ai dû utiliser pour mon projet',
+        researchTips: {
+            title: 'Conseils de recherche',
+            description: 'Voici quelques conseils pour rechercher un document par vous-même :',
+            tips: [
+                {
+                    description: 'Utilisez filetype=pdf dans votre recherche. Vous trouverez exclusivement des pdf et vous pourrez trouver tous les livres que vous recherchez. Essayez avec la barre de recherche ci-dessous. Par exemple : Mathematics of Public Key Cryptography filetype=pdf'
+                },
+                {
+                    description: 'Utilisez différents moteurs de recherche comme duckduckgo ou yandex'
+                },
+                {
+                    description: 'Trouvez des sites web avec des bases de données pdf',
+                    links: [
+                        { title: 'ePrint', url: 'https://eprint.iacr.org/complete/' },
+                        { title: 'IETF datatracker', url: 'https://datatracker.ietf.org/' },
+                        { title: 'pdfdrive.com', url: 'https://www.pdfdrive.com/' }
+                    ]
+                }
+            ]
+        },
+        table: {
+            title: 'titre',
+            authors: 'Auteurs',
+            date: 'Date',
+            description: 'Description',
+        },
+        categories: {
+            cryptography: {
+                color: '#bc5041',
+                items: [
+                    {
+                        title: 'SERIOUS CRYPTOGRAPHY a Practical: Introduction to Modern Encryption',
+                        authors: 'Jean-Philippe Aumasson',
+                        date: '2018',
+                        description: 'Livre intéressant pour débutant en cryptographie. Parle de cryptographie classique, moderne et quantique avec des exemples d\'application en python ou golang. Tout est assez facile à comprendre et donne une très bonne vue d\'ensemble de la cryptographie.',
+                        link: 'https://palaiologos.rocks/library/Serious%20Cryptography%20Jean-Philippe%20Aumasson.pdf'
+                    },
+                    {
+                        title: 'Mathematics of Public Key Cryptography',
+                        authors: 'Steven Galbraith',
+                        date: '2012',
+                        description: 'Ce livre donne une présentation rigoureuse de la plupart des mathématiques sous-jacentes à la cryptographie à clé publique. Notre accent principal est mis sur les mathématiques. Nous mettons la précision et la rigueur mathématiques avant la généralité, les questions pratiques de la cryptographie dans le monde réel, ou l\'optimalité algorithmique.',
+                        link: 'https://www.math.auckland.ac.nz/~sgal018/crypto-book/main.pdf'
+                    },
+                    {
+                        title: 'An Introduction to Mathematical Cryptography',
+                        authors: 'Hoffstein, Jeffrey, Pipher, Jill, Silverman, J.H',
+                        description: 'Introduction détaillée aux courbes elliptiques et à leur utilisation en cryptographie, y compris le sujet "chaud" récent de la cryptographie basée sur le pairage de courbes elliptiques. Introduction détaillée aux réseaux et à la cryptographie basée sur les réseaux.',
+                        link: 'https://link.springer.com/book/10.1007/978-1-4939-1711-2'
+                    }
+                ]
+            },
+            quantum: {
+                color: '#d2aa85',
+                items: [
+                    {
+                        title: 'Understanding Quantum Technologies',
+                        authors: 'Olivier Ezratty',
+                        date: '27 septembre 2021',
+                        description: 'Olivier Ezratty conseille et forme les entreprises et services publics dans le développement de leurs stratégies d\'innovation autour des deep techs et, en particulier, des technologies quantiques.',
+                        link: 'https://www.oezratty.net/wordpress/2021/understanding-quantum-technologies-2021/'
+                    },
+                    {
+                        title: 'Introductory Quantum Computing',
+                        description: 'Ce document en ligne aide les débutants absolus à poursuivre dans la future direction du codage et de l\'informatique quantique. La leçon commence par les fondamentaux des qubits, des portes quantiques et des circuits quantiques et des algorithmes quantiques.',
+                        link: 'https://q4quanta.github.io/qcdocs/'
+                    }
+                ]
+            },
+            maths: {
+                color: '#9361ef',
+                items: [
+                    {
+                        title: '🇫🇷 Animal crossing est NP difficile',
+                        description: 'Bien entendu, dire qu\'Animal Crossing est NP-Difficile est un abus de langage... Cependant, les mécaniques du jeu sont assez complexes pour rapidement faire émerger de tels problèmes !',
+                        link: 'https://bl4omarchie.github.io/archX/pdf/animal_crossing.pdf'
+                    },
+                    {
+                        title: '🇫🇷 PGCD - PPCM Théorèmes de Bézout et de Gauss',
+                        authors: 'Paul Milan',
+                        date: '15 juillet 2016',
+                        description: 'Cours avec démonstration du PGCD, PPCM, théorème de Bézout et de Gauss. Théorie des nombres et arithmétique modulaire',
+                        link: 'https://www.lyceedadultes.fr/sitepedagogique/documents/math/mathTermSspe/02_PGCD_PPCM/02_cours_pgcd_ppcm_bezout_gauss.pdf'
+                    }
+                ]
+            },
+            standards: {
+                color: '#0e95c1',
+                items: [
+                    {
+                        title: 'Digital Signature Standard - FIPS PUB 186-4',
+                        authors: 'NIST',
+                        date: 'Juillet 2013',
+                        description: 'Cette norme spécifie une suite d\'algorithmes qui peuvent être utilisés pour générer une signature numérique. Les signatures numériques sont utilisées pour détecter les modifications non autorisées des données et pour authentifier l\'identité du signataire.',
+                        link: 'https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.186-4.pdf'
+                    },
+                    {
+                        title: 'Recommendation for Pair-Wise Key Establishment Using Integer Factorization Cryptography',
+                        authors: 'NIST',
+                        date: 'Mars 2019',
+                        description: 'Cette recommandation spécifie des schémas d\'établissement de clés utilisant la cryptographie par factorisation d\'entiers (en particulier, RSA).',
+                        link: 'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Br2.pdf'
+                    },
+                    {
+                        title: 'Announcing the ADVANCED ENCRYPTION STANDARD (AES)',
+                        authors: 'NIST',
+                        date: '26 novembre 2001',
+                        description: 'Norme FIPS approuvée pour l\'algorithme cryptographique Advanced Encryption Standard (AES)',
+                        link: 'https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf'
+                    },
+                    {
+                        title: 'PKCS #1: RSA Cryptography Specifications Version 2.2 - rfc8017',
+                        authors: 'Kathleen M. Moriarty, Burt Kaliski, Jakob Jonsson, Andreas Rusch',
+                        date: 'Novembre 2016',
+                        description: 'Ce document fournit des recommandations pour l\'implémentation de la cryptographie à clé publique basée sur l\'algorithme RSA, couvrant les primitives cryptographiques, les schémas de chiffrement, les schémas de signature avec appendice, et la syntaxe ASN.1.',
+                        link: 'https://datatracker.ietf.org/doc/pdf/draft-moriarty-pkcs1-01.pdf'
+                    }
+                ]
             }
         }
     }
